@@ -1,4 +1,5 @@
-document.querySelector("main").addEventListener(
-    "click", () => {
-        console.log("click");
+const main = document.querySelector("main");
+
+main.addEventListener("click", (e) => {
+        console.log("click", e.target);
     });

@@ -1,1 +1,4 @@
-console.log("hiss");
+document.querySelector("main").addEventListener(
+    "click", () => {
+        console.log("click");
+    });

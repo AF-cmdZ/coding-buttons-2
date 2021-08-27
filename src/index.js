@@ -1,5 +1,5 @@
-const main = document.querySelector("main");
+document.querySelector("main").addEventListener("click", ({ target }) => {
+        let span = target.querySelector("span");
 
-main.addEventListener("click", (e) => {
-        console.log("click", e.target);
+        span.innerText = Number(span.innerText) + 1;
     });
